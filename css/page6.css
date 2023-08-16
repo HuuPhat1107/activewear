@@ -1,0 +1,163 @@
+.banner {
+    background: url(https://res.cloudinary.com/dj5vdnbai/image/upload/v1691382012/BANNER_xa37ol.png);
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.research-order {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 5% auto;
+}
+
+.research-order .follow-order {
+    width: 40%;
+    border-right: 1px solid #000;
+    padding: 0 5%;
+}
+
+.research-order .order-information {
+    width: 50%;
+    background: #E8F1FF;
+    margin: 0 5%;
+    padding: 5%;
+}
+
+.research-order .follow-order .order-title h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+.research-order .follow-order p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000;
+}
+
+.research-order .follow-order .order-info {
+    margin: 5% 0;
+}
+
+.research-order .follow-order .order-info div {
+    padding: 10px 0;
+}
+
+.research-order .follow-order .order-info .code-order label span,
+.research-order .follow-order .order-info .order-phone label span {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.follow-order .order-info .code-order input[type=text],
+.follow-order .order-info .order-phone input[type=text] {
+    background-color: #f1f1f1;
+    border: 1px solid #e4e4e4;
+    border-radius: 0;
+    font-family: roboto condensed, helvetica neue, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    height: 48px;
+    line-height: 1.5;
+    padding: 0 15px;
+    vertical-align: baseline;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.follow-order .order-info .code-order label span:after,
+.follow-order .order-info .order-phone label span:after {
+    content: '*';
+    color: #e74949;
+    margin: 0 0 0 4px;
+}
+
+.follow-order .cta-check {
+    width: 100%;
+}
+
+.follow-order .cta-check button {
+    width: 100%;
+    border: none;
+    border-radius: 40px;
+    padding: 10px;
+    background: #0066ff;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.research-order .order-information .order-info h4,
+.research-order .order-information .gift-give h4,
+.research-order .order-information .gift-take h4 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+}
+.research-order .order-information .gift-take p,
+.research-order .order-information .gift-give p,
+.research-order .order-information .order-info p {
+    margin-bottom: 1rem;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+.research-order .order-information .order-info .product-give {
+    display: flex;
+    padding: 10px;
+    background: #fff;
+    width: 70%;
+}
+.research-order .order-information .order-info .product-give .product-img {
+    width: 50%; margin-right: 10px;
+}
+.research-order .order-information .order-info .product-give .product-img img {
+    width: 100%;
+}
+.research-order .order-information .order-info .product-give .product-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.research-order .order-information .order-info .product-give .product-information .product-name p {
+    font-size: 16px ;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #0066ff;
+    font-family: 'Roboto', sans-serif;
+}
+.research-order .order-information .order-info .product-give .product-information .product_price p{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+.research-order .order-information .order-info .product-give .product-information .product_price p span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 786px) {
+    .banner {
+        background-position: 60%;
+        height: 30vw;
+    }
+    .research-order .follow-order,
+    .research-order .order-information,
+    .research-order .order-information .order-info .product-give,
+    .research-order .order-information .order-info .product-give .product-img {
+        width: 100%;
+    }
+
+    .research-order .follow-order {
+        padding: 5%;
+    }
+}

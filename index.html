@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIVE AND TAKE</title>
+    <link rel="icon" href="https://routine.vn/media/favicon/default/output-onlinejpgtools.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="fixed-top">
+            <div class="logo">
+                <a class="mt-2 mt-lg-0" href="index.html">
+                    <img src="images/Logo.png" alt="MDB Logo" loading="lazy" />
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Trang tra cứu</a></li>
+                <li><a href="#">Hướng dẫn mua hàng</a></li>
+                <li><a href="#">Trang chính</a></li>
+            </ul>
+            <div class="header-icon-right">
+                <div class="icon customer">
+                    <a class="action showcustomer" href="#" style="background-image: url(../images/user.png);">
+                    </a>
+                </div>
+                <div class="icon search">
+                    <a class="action showsearch" href="#" style="background-image: url(../images/search.png);">
+                    </a>
+                </div>
+                <div class="icon basket">
+                    <a class="action showbasket" href="#" style="background-image: url(../images/basket.png);">
+                    </a>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+            </div>
+        </nav>
+    </header>
+    <div class="introduce">
+        <div class="row-video">
+            <iframe class="video ytplayer"
+                src="https://www.youtube.com/embed/c35gwtGz2ss?loop=1&amp;playlist=c35gwtGz2ss&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                width="700" height="500" frameborder="0" allowfullscreen="allowfullscreen">
+            </iframe>
+        </div>
+        <div class="title">
+            <h1>sharing love - hành trình hạnh phúc</h1>
+        </div>
+        <div class="description">
+            <p>Chuyến hành trình hạnh phúc cùng Routine đã đi được đến rất nhiều nơi, rất nhiều những trái tim với
+                tình cảm yêu thương đã được lan tỏa.</p>
+            <p>Và trên hành trình vẫn đang diễn ra ấy, Routine thấu hiểu rằng, triết lý cho và nhận đôi khi diễn ra
+                thật vô tư, thật hào sảng. Như tiếp thêm năng lượng cho hành trình lan tỏa yêu thương, đó là hành
+                trình quan tâm đến sức khỏe, tinh thần và hành trình của tình yêu.</p>
+            <p>Giải chạy Run For Love đã diễn ra và mang theo thông điệp đầy tình yêu thương, sự quan tâm đến những
+                người xung quanh. Không chỉ chạy vì sức khỏe, vẻ đẹp mà chúng mình chạy vì một cuộc sống hạnh phúc,
+                lan tỏa tình yêu và truyền cảm hứng đó đến bất cứ ai, không kể lạ quen.</p>
+            <p>Và với Routine, khi giải chạy Run For Love kết thúc, hành trình tình yêu vẫn sẽ tiếp tục và là khởi
+                đầu của rất nhiều những người khác và câu chuyện khác. Chính chúng ta, những người đã có những trải
+                nghiệm thú vị nhờ thể thao sẽ là những người tiếp tục “trao đuốc” cho rất nhiều người nữa để có thể
+                bắt đầu hành trình hạnh phúc của riêng mình. Và sau tất cả, không chỉ chúng ta mà rất rất nhiều
+                người sẽ được cảm nhận và sống trong một cộng đồng thật nhiều hạnh phúc.</p>
+            <p>Đến với hành trình này bạn sẽ vừa được nhận và cho đi thật nhiều tình yêu:<br>
+                - Nhận về: Phần quà bất ngờ từ một người mà ta chẳng hề quen biết cùng những dòng nhắn gửi ý
+                nghĩa.<br>
+                - Cho đi: phần quà của sự yêu thương và quan tâm đến một người bất kỳ cùng những dòng nhắn gửi
+                riêng.</p>
+            <p>Hành trình đặc biệt này sẽ hạnh phúc biết bao khi chúng ta có thêm thật nhiều người bạn có thể chia
+                sẻ và đồng hành cùng nhau trên chặng đường phía trước.</p>
+        </div>
+    </div>
+    <nav class="banner">
+        <div class="banner-img banner-desktop">
+            <img src="images/banner-desktop.jpg" alt="">
+        </div>
+        <div class="banner-img banner-mobile">
+            <img src="images/banner-mobile.jpg" alt="" srcset="">
+        </div>
+    </nav>
+    <section>
+        <div class="tabs">
+            <div class="tab-header">
+                <div class="active">Xem theo người tặng</div>
+                <div>xem theo combo</div>
+            </div>
+            <div class="tab-body">
+                <div class="active">
+                    <div class="container">
+                        <div class="box-container">
+                            <div class="box" style="--box-color:#52ca56">
+                                <a href="page2.html">
+                                    <div class="sport">
+                                        <h3>Ván trượt</h3>
+                                    </div>
+                                    <div class="image">
+                                        <img src="images/Fitz Standing.png" alt>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Phạm Văn Cường</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box" style="--box-color:#52ca56">
+                                <a href="#">
+                                    <div class="sport">
+                                        <h3>Ván trượt</h3>
+                                    </div>
+                                    <div class="image">
+                                        <img src="images/Fitz Standing-6.png" alt>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Huynh duy trân</h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="box" style="--box-color:#52ca56">
+                                <a href="#">
+                                    <div class="sport">
+                                        <h3>Ván trượt</h3>
+                                    </div>
+                                    <div class="image">
+                                        <img src="images/Fitz Standing-3.png" alt>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Phạm Văn Cường</h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="box" style="--box-color:#c889f0">
+                                <a href="#">
+                                    <div class="sport">
+                                        <h3>Ván trượt</h3>
+                                    </div>
+                                    <div class="image">
+                                        <img src="images/Fitz Playing Sports.png" alt>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Huynh duy trân</h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="box" style="--box-color:#c889f0">
+                                <a href="#">
+                                    <div class="sport">
+                                        <h3>Ván trượt</h3>
+                                    </div>
+                                    <div class="image">
+                                        <img src="images/Fitz Playing Sports-6.png" alt>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Huynh duy trân</h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="box" style="--box-color:#c889f0">
+                                <a href="#">
+                                    <div class="sport">
+                                        <h3>Ván trượt</h3>
+                                    </div>
+                                    <div class="image">
+                                        <img src="images/Fitz Playing Sports-3.png" alt>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Phạm Văn Cường</h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="box" style="--box-color:#e94fa5">
+                                <a href="#">
+                                    <div class="sport">
+                                        <h3>Ván trượt</h3>
+                                    </div>
+                                    <div class="image">
+                                        <img src="images/Fitz Playing Sports-2.png" alt>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Phạm Văn Cường</h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="box" style="--box-color:#e94fa5">
+                                <a href="#">
+                                    <div class="sport">
+                                        <h3>Ván trượt</h3>
+                                    </div>
+                                    <div class="image">
+                                        <img src="images/Fitz Playing Sports.png" alt>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Phạm Văn Cường</h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="box" style="--box-color:#e94fa5">
+                                <a href="#">
+                                    <div class="sport">
+                                        <h3>Ván trượt</h3>
+                                    </div>
+                                    <div class="image">
+                                        <img src="images/Fitz Playing Sports-3.png" alt>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Phạm Văn Cường</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box" style="--box-color:#e94fa5">
+                                <a href="#">
+                                    <div class="sport">
+                                        <h3>Ván trượt</h3>
+                                    </div>
+                                    <div class="image">
+                                        <img src="images/Fitz Playing Sports.png" alt>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Phạm Văn Cường</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box" style="--box-color:#e94fa5">
+                                <a href="#">
+                                    <div class="sport">
+                                        <h3>Ván trượt</h3>
+                                    </div>
+                                    <div class="image">
+                                        <img src="images/Fitz Playing Sports.png" alt>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Phạm Văn Cường</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box" style="--box-color:#e94fa5">
+                                <a href="#">
+                                    <div class="sport">
+                                        <h3>Ván trượt</h3>
+                                    </div>
+                                    <div class="image">
+                                        <img src="images/Fitz Playing Sports.png" alt>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Phạm Văn Cường</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box" style="--box-color:#e94fa5">
+                                <a href="#">
+                                    <div class="sport">
+                                        <h3>Ván trượt</h3>
+                                    </div>
+                                    <div class="image">
+                                        <img src="images/Fitz Playing Sports.png" alt>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Phạm Văn Cường</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box" style="--box-color:#e94fa5">
+                                <a href="#">
+                                    <div class="sport">
+                                        <h3>Ván trượt</h3>
+                                    </div>
+                                    <div class="image">
+                                        <img src="images/Fitz Playing Sports.png" alt>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Phạm Văn Cường</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box" style="--box-color:#e94fa5">
+                                <a href="#">
+                                    <div class="sport">
+                                        <h3>Ván trượt</h3>
+                                    </div>
+                                    <div class="image">
+                                        <img src="images/Fitz Playing Sports.png" alt>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Phạm Văn Cường</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box" style="--box-color:#e94fa5">
+                                <a href="#">
+                                    <div class="sport">
+                                        <h3>Ván trượt</h3>
+                                    </div>
+                                    <div class="image">
+                                        <img src="images/Fitz Playing Sports.png" alt>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Phạm Văn Cường</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box" style="--box-color:#e94fa5">
+                                <a href="#">
+                                    <div class="sport">
+                                        <h3>Ván trượt</h3>
+                                    </div>
+                                    <div class="image">
+                                        <img src="images/Fitz Playing Sports.png" alt>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Phạm Văn Cường</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box" style="--box-color:#e94fa5">
+                                <a href="#">
+                                    <div class="sport">
+                                        <h3>Ván trượt</h3>
+                                    </div>
+                                    <div class="image">
+                                        <img src="images/Fitz Playing Sports.png" alt>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Phạm Văn Cường</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box" style="--box-color:#e94fa5">
+                                <a href="#">
+                                    <div class="sport">
+                                        <h3>Ván trượt</h3>
+                                    </div>
+                                    <div class="image">
+                                        <img src="images/Fitz Playing Sports.png" alt>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Phạm Văn Cường</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box" style="--box-color:#e94fa5">
+                                <a href="#">
+                                    <div class="sport">
+                                        <h3>Ván trượt</h3>
+                                    </div>
+                                    <div class="image">
+                                        <img src="images/Fitz Playing Sports.png" alt>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Phạm Văn Cường</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box" style="--box-color:#e94fa5">
+                                <a href="#">
+                                    <div class="sport">
+                                        <h3>Ván trượt</h3>
+                                    </div>
+                                    <div class="image">
+                                        <img src="images/Fitz Playing Sports.png" alt>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Phạm Văn Cường</h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div id="load-more"> Xem thêm </div>
+                        <div id="hide-more"> Thu gọn </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="container_1">
+                        <div class="box-container_1">
+                            <div class="box" style="--box-color:#ecf4ff">
+                                <div class="sport">
+                                    <h3>combo mùa hè</h3>
+                                </div>
+                                <div class="image">
+                                    <img src="images/quangreen.jpg" alt>
+                                </div>
+                                <div class="box-menber">
+                                    <div class="title">33 người tặng
+                                        <hr>
+                                    </div>
+                                    <div class="scrollable-menber">
+                                        <ul class="listmenber">
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="price-combo">
+                                    <p>700.000đ</p>
+                                </div>
+                            </div>
+                            <div class="box" style="--box-color:#ecf4ff">
+                                <div class="sport">
+                                    <h3>combo mùa hè</h3>
+                                </div>
+                                <div class="image">
+                                    <img src="images/Mask Group (1).png" alt>
+                                </div>
+                                <div class="box-menber">
+                                    <div class="title">33 người tặng
+                                        <hr>
+                                    </div>
+                                    <div class="scrollable-menber">
+                                        <ul class="listmenber">
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="price-combo">
+                                    <p>700.000đ</p>
+                                </div>
+                            </div>
+                            <div class="box" style="--box-color:#ecf4ff">
+                                <div class="sport">
+                                    <h3>combo mùa hè</h3>
+                                </div>
+                                <div class="image">
+                                    <img src="images/Mask Group (1).png" alt>
+                                </div>
+                                <div class="box-menber">
+                                    <div class="title">33 người tặng
+                                        <hr>
+                                    </div>
+                                    <div class="scrollable-menber">
+                                        <ul class="listmenber">
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="price-combo">
+                                    <p>700.000đ</p>
+                                </div>
+                            </div>
+                            <div class="box" style="--box-color:#ecf4ff">
+                                <div class="sport">
+                                    <h3>combo mùa hè</h3>
+                                </div>
+                                <div class="image">
+                                    <img src="images/Mask Group (1).png" alt>
+                                </div>
+                                <div class="box-menber">
+                                    <div class="title">33 người tặng
+                                        <hr>
+                                    </div>
+                                    <div class="scrollable-menber">
+                                        <ul class="listmenber">
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="price-combo">
+                                    <p>700.000đ</p>
+                                </div>
+                            </div>
+                            <div class="box" style="--box-color:#ecf4ff">
+                                <div class="sport">
+                                    <h3>combo mùa hè</h3>
+                                </div>
+                                <div class="image">
+                                    <img src="images/Mask Group (1).png" alt>
+                                </div>
+                                <div class="box-menber">
+                                    <div class="title">33 người tặng
+                                        <hr>
+                                    </div>
+                                    <div class="scrollable-menber">
+                                        <ul class="listmenber">
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="price-combo">
+                                    <p>700.000đ</p>
+                                </div>
+                            </div>
+                            <div class="box" style="--box-color:#ecf4ff">
+                                <div class="sport">
+                                    <h3>combo mùa hè</h3>
+                                </div>
+                                <div class="image">
+                                    <img src="images/Mask Group (1).png" alt>
+                                </div>
+                                <div class="box-menber">
+                                    <div class="title">33 người tặng
+                                        <hr>
+                                    </div>
+                                    <div class="scrollable-menber">
+                                        <ul class="listmenber">
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="price-combo">
+                                    <p>700.000đ</p>
+                                </div>
+                            </div>
+                            <div class="box" style="--box-color:#ecf4ff">
+                                <div class="sport">
+                                    <h3>combo mùa hè</h3>
+                                </div>
+                                <div class="image">
+                                    <img src="images/Mask Group (1).png" alt>
+                                </div>
+                                <div class="box-menber">
+                                    <div class="title">33 người tặng
+                                        <hr>
+                                    </div>
+                                    <div class="scrollable-menber">
+                                        <ul class="listmenber">
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="price-combo">
+                                    <p>700.000đ</p>
+                                </div>
+                            </div>
+                            <div class="box" style="--box-color:#ecf4ff">
+                                <div class="sport">
+                                    <h3>combo mùa hè</h3>
+                                </div>
+                                <div class="image">
+                                    <img src="images/Mask Group (1).png" alt>
+                                </div>
+                                <div class="box-menber">
+                                    <div class="title">33 người tặng
+                                        <hr>
+                                    </div>
+                                    <div class="scrollable-menber">
+                                        <ul class="listmenber">
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                            <li>Thích thể thao mỗi ngày<a href="#">nhận combo</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="price-combo">
+                                    <p>700.000đ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="story">
+            <div class="story-1">
+                <div class="story-img">
+                    <img src="images/story1.png" alt="" srcset="">
+                </div>
+                <div class="story-content">
+                    <h2>MINH HOÀNG - PILATES</h2>
+                    <p>Tập luyện thể thao cũng như chúng ta bỏ ống heo vậy!</p>
+                    <p>Từ 1 cậu bé gầy ốm cao 1m82 nhưng nặng chỉ có 55kg và gần như thể lực rất yếu bị bạn bè cứ cười chê. Nên mình đã quyết tâm tập tuyện để thay đổi bản thân.</p>
+                    <p>Năm mình bắt đầu tập luyện rất nhiều thứ làm mình chùn bước. Lý do chưa hiểu về cơ thể và nguồn dinh dưỡng hợp lý. Nên khoảng thời gian đầu gần như mình không thay đổi gì nhiều. Đến khi mình tìm được một nơi học tập và trau dồi cho mình những kiến thức về fitness, Yoga, pilates...Dần sau đó mình đã có thêm những kiến thức, kỹ năng và sự tự tin.</p>
+                    <p>Mình tìm đến bộ môn Yoga cũng như Pilates với mong muốn chữa lành và cải thiện các vấn đề về thể chất và cân bằng cơ thể. Sau những thời gian tập luyện và trải nghiệm mình nhận ra tập luyện mỗi ngày như cách chúng ta bỏ ống heo vậy, mỗi ngày 1 ít. Tập mỗi ngày tại thời điểm đó có thể chúng ra rất mệt nhưng về sau chúng ta sẽ nhận lại được là một cơ thể khoẻ mạnh và body đẹp.
+                    </p>
+                    <p>Hiện mình đang là Hướng Dẫn Viên Yoga và Pilates với tinh thần mang lại sức khoẻ và cải thiện vóc dáng cho những khách hàng đang có vấn đề về sức khoẻ và các bệnh lý về cột sống.</p>
+                </div>
+            </div>
+            <div class="story-2">
+                <div class="story-img">
+                    <div>
+                        <img src="images/story2-1.png" alt="" srcset="">
+                    </div>
+                    <div>
+                        <img src="images/story2-2.png" alt="" srcset="">
+                    </div>
+                    <div>
+                        <img src="images/story2-3.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="story-content">
+                    <h2>NGUYỄN THÀNH TRUNG - GYM</h2>
+                    <p>Mọi thứ có lẽ bắt đầu từ 2020, vào đợt giãn cách lần đầu do covid, khi mà mọi người phải work form home, trong đó có cả mình. Khi ở nhà làm việc, mình cứ ăn và ngủ nên lên cân 1 cách chóng mặt, đỉnh điểm là anh lên gần 110kg.</p>
+                    <p>Đến khi quay trở lại làm quần áo mặc chật cả, có cả cái quần mua trước giãn cách chưa mặc bao giờ cũng chật luôn. Mình cảm thấy tiếc cái quần nên đã giảm cân cấp tốc. Chưa kể, khi lên cân nhiều cơ thể trở nên nặng nề và rất nhanh mệt, đi vài bật cầu thang đã thở dốc, còn bệnh về tim mạch, huyết áp nữa.</p>
+                    <p>Chính vì vậy mình quyết định giảm cân bằng việc chạy bộ mỗi ngày và giảm khẩu phần ăn, hạn chế dầu mỡ. Sau khi cơ thể giảm kha khá cân nặng thì mình bắt đầu đến phòng gym. Việc luyện tập điều độ giúp mình không chỉ thấy yêu cơ thể mà còn giúp sức khoẻ của mình cũng được cải thiện hơn.</p>
+                    <p>Và tính đến thời điểm này, mnh khá hài lòng với cơ thể hiện tại của mình và sẽ cố gắng để cơ thể ở trạng thái tốt nhất.</p>
+                </div>
+            </div>
+            <div class="story-3">
+                <div class="story-img">
+                    <img src="images/story3.png" alt="" srcset="">
+                </div>
+                <div class="story-content">
+                    <h2>ĐÌNH KHANG - VÕ KARATE </h2>
+                    <p>Mình tập võ từ năm lớp 4 và hầu như đến năm đại học thì môn thể dục nào mình cũng auto đạt 10 điểm cả, dĩ nhiên đó là năng khiếu nhưng nếu như không có sự tập luyện duy trì và chăm sóc sức khoẻ hầu như nó sẽ không tốt được như vậy, và cơ thể là một kiểu sẽ phản ứng rất rõ rệt khi mình có chăm sóc tốt với nó hay không.</p>
+                    <p>Khang nhờ tập võ và tập luyện duy trì cho nên cơ thể luôn ở trong trạng thái slim fit và luôn nhanh nhẹn. Khang nhớ có 1 giai đoạn Khang stress và hầu như lười vận động thì các cơ bắp của mình sẽ bị nhão và thể lực cũng giảm rõ rệt, nhớ không lầm thì Khang tăng từ 57kg lên đến tận 68kg thì khi đó mình mập lên 1 cách không ngờ đến, mọi hoạt động hàng ngày bị hạn chế rất nhiều và mình lười làm mọi thứ.</p>
+                    <p>Và Khang đã như vậy trong nửa năm, sau đó Khang tiếp xúc với công việc Diễn Viên và nhận biết được cái sở thích thật sự của mình, và Khang bắt đầu chăm chút cơ thể, và sức khoẻ của mình hơn. Khang bắt đầu tập võ lại thì trong vòng 4 tháng thì cơ thể đã có thay đổi rõ rệt, mình không còn bụng to quá nhiều, ăn uống cũng tốt hơn các cơ bắp cũng dần phục hồi và đương nhiên nó sẽ không hồi phục lại trạng thái như slim fit lúc trước được. Khang từng hối hận như vậy đó, và cái gì mình có thể chăm sóc nó được hãy dành thời gian nhiều để yêu thương bản thân nhiều hơn đừng để tốn thời gian để làm lại mọi thứ trong khi chúng ta có thể nuôi dưỡng nó hàng ngày thay vì phá hoại nó.</p>
+                    <p>Khang đã bỏ thời gian rất nhiều để có thể giúp cơ thể của mình trở nên gọn hơn, nhanh nhẹn hơn như lúc trước và đến thời điểm hiện tại Khang rất hài lòng với body hiện tại - giúp Khang rất nhiều còn gì tuyệt vời hơn khi ra đường với 1 thể chất tốt, nhanh nhẹn, đẹp (ít nhất là đối với mình) sẽ giúp cho bản thân mình tự tin hơn. Và Khang muốn câu chuyện này sẽ có giá trị 1 phần nào đó dành cho 1 số bạn trẻ như Khang hoặc nhỏ hơn.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="block-banner">
+            <div class="row-layout">
+                <div class="block-img-1">
+                    <div class="img-item img_1">
+                        <img src="images/grid1.png" alt>
+
+                    </div>
+                    <div class="img-item img_2">
+                        <img src="images/grid2.png" alt>
+
+                    </div>
+                    <div class="img-item img_3">
+                        <img src="images/image 68.png" alt>
+
+                    </div>
+                    <div class="img-item img_4"><img src="images/bluetrouser.png" alt>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+    </section>
+    <div class="block-carousel">
+        <div class="row-carousel">
+            <div class="carousel-title">
+                <h2>Run for love</h2>
+            </div>
+            <div class="main-carousel">
+                <div class="carousel-cell"><img src="images/carousel.png" alt srcset></div>
+                <div class="carousel-cell"><img src="images/carousel2.png" alt srcset></div>
+                <div class="carousel-cell"><img src="images/carousel3.png" alt srcset></div>
+                <div class="carousel-cell"><img src="images/carousel.png" alt srcset></div>
+                <div class="carousel-cell"><img src="images/carousel2.png" alt srcset></div>
+                <div class="carousel-cell"><img src="images/carousel3.png" alt srcset></div>
+                <div class="carousel-cell"><img src="images/carousel.png" alt srcset></div>
+                <div class="carousel-cell"><img src="images/carousel2.png" alt srcset></div>
+                <div class="carousel-cell"><img src="images/carousel3.png" alt srcset></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="social_media">
+        <div class="social_image">
+            <img src="images/social.png" alt srcset>
+            <a href="#" class="btn-social">
+                <img src="images/icon _instagram.png" alt srcset>
+                <span>@routine_official</span>
+            </a>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <div class="footer-content">
+            <div class="footer-row">
+                <div class="footer-information">
+                    <div class="footer-logo"><img src="https://routine.vn/media/wysiwyg/ezgif-7-ee007e6332a0_2x_2.png"
+                            alt="Logo Thương hiệu Routine"></div>
+                    <h3>CÔNG TY TNHH ROUTINE VIETNAM</h3>
+                    <p>Mã Số Thuế: 0106486365</p>
+                    <p>&nbsp;</p>
+                    <p>Văn Phòng: Tầng 8 tòa nhà Lê Đình,&nbsp;11Bis Nguyễn
+                        Gia Thiều,</p>
+                    <p>phường Võ Thị Sáu, quận 3, TP HCM.</p>
+                    <div class="footer-bct">
+                        <img src="images/kiemchung.png" alt srcset>
+                    </div>
+                </div>
+                <div class="footer-about">
+                    <div class="accordian">
+                        <div class="accordian_title">
+                            <h3>Công ty</h3>
+                        </div>
+                        <div class="accordian_content">
+                            <ul>
+                                <li><a href="https://routine.vn/gioi-thieu-ve-routine" target="_blank"
+                                        rel="noopener">Giới
+                                        thiệu về ROUTINE</a></li>
+                                <li><a href="https://jobs.routine.vn/" target="_blank" rel="noopener">Tuyển
+                                        dụng</a></li>
+                                <li><a href="https://routine.vn/tin-thoi-trang" target="_blank" rel="noopener">Tin
+                                        thời trang</a></li>
+                                <li><a href="https://routine.vn/franchise" target="_blank" rel="noopener">Hợp
+                                        tác nhượng quyền</a></li>
+                                <li><a href="https://routine.vn/thong-tin-lien-he" target="_blank" rel="noopener">Liên
+                                        hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-social">
+                        <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
+                        <ul class="social-link">
+                            <li><a class="social-icon" href="https://www.facebook.com/routinevn" target="_blank"
+                                    rel="nofollow noopener">
+                                    <div class="icon-img">
+                                        <img src="images/face.png" alt srcset>
+                                    </div>
+                                </a></li>
+                            <li><a class="social-icon" href="https://www.instagram.com/routine_official/"
+                                    target="_blank" rel="nofollow noopener">
+                                    <div class="icon-img">
+                                        <img src="images/insta.png" alt srcset>
+                                    </div>
+                                </a></li>
+                            <li><a class="social-icon" href="https://zalo.me/3623603903787020327" target="_blank"
+                                    rel="nofollow noopener">
+                                    <div class="icon-img">
+                                        <img src="images/zalo.png" alt srcset>
+                                    </div>
+                                </a></li>
+                            <li><a class="social-icon" href="https://www.youtube.com/channel/UCx32mX7R75Km_oQiI_NGAQg"
+                                    target="_blank" rel="nofollow noopener">
+                                    <div class="icon-img">
+                                        <img src="images/ytb.png" alt srcset>
+                                    </div>
+                                </a></li>
+                            <li><a class="social-icon" href="https://www.tiktok.com/@routine_vietnam?lang=vi-VN"
+                                    target="_blank" rel="nofollow noopener">
+                                    <div class="icon-img">
+                                        <img src="images/tiktok.png" alt srcset>
+                                    </div>
+                                </a></li>
+                            <li><a class="social-icon" href="https://shopee.vn/routinevn" target="_blank"
+                                    rel="nofollow noopener">
+                                    <div class="icon-img">
+                                        <img src="images/shopee.png" alt srcset>
+                                    </div>
+                                </a></li>
+                            <li><a class="social-icon" href="https://www.lazada.vn/shop/routine-official"
+                                    target="_blank" rel="nofollow noopener">
+                                    <div class="icon-img">
+                                        <img src="images/routine-lazada-logo.png" alt srcset>
+                                    </div>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-policy">
+                    <div class="accordian">
+                        <div class="accordian_title">
+                            <h3>Chính sách khách hàng</h3>
+                        </div>
+                        <div class="accordian_content">
+                            <ul>
+                                <li><a href="https://routine.vn/chinh-sach-khach-hang" target="_blank"
+                                        rel="noopener">Chính
+                                        sách khách hàng thân thiết</a></li>
+                                <li><a href="https://routine.vn/chinh-sach-doi-tra" target="_blank" rel="noopener">Chính
+                                        sách đổi trả</a></li>
+                                <li><a href="https://routine.vn/chinh-sach-bao-hanh" target="_blank"
+                                        rel="noopener">Chính
+                                        sách bảo hành</a></li>
+                                <li><a href="https://routine.vn/chinh-sach-bao-mat" target="_blank" rel="noopener">Chính
+                                        sách bảo mật</a></li>
+                                <li><a href="https://routine.vn/cau-hoi-thuong-gap" target="_blank" rel="noopener">Câu
+                                        hỏi thường gặp</a></li>
+                                <li><a href="https://routine.vn/huong-dan-mua-hang-online" target="_blank"
+                                        rel="noopener">Hướng
+                                        dẫn mua hàng online</a></li>
+                                <li><a href="https://routine.vn/huong-dan-kiem-tra-hang-the" target="_blank"
+                                        rel="noopener">Hướng
+                                        dẫn kiểm tra hạng thẻ thành viên</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-store">
+                    <div id="store_info">
+                        <div class="store-title">
+                            <h3>Thông tin cửa hàng</h3>
+                        </div>
+                        <div>
+                            <ul class="list-store">
+                                <li>
+                                    <h4 class="store-name">Cửa hàng thứ 34</h4>
+                                    <p>F15 tầng 1 AEON Mall Tân Phú, 30
+                                        Bờ Bao Tân Thắng, Phường Sơn Kỳ,
+                                        TP Hồ Chí Minh</p>
+                                </li>
+                                <li>
+                                    <h4 class="store-name">Cửa hàng thứ 33</h4>
+                                    <p>809 Giải Phóng, Phường Giáp Bát,
+                                        Quận Hoàng Mai, TP Hà Nội</p>
+                                </li>
+                                <li>
+                                    <h4 class="store-name">Cửa hàng thứ 32</h4>
+                                    <p>192 - 194 Hoa Lan, Phường 2, Quận Phú
+                                        Nhuận, TP Hồ Chí Minh</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-social">
+                        <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
+                        <ul class="social-link">
+                            <li><a class="social-icon" href="https://www.facebook.com/routinevn" target="_blank"
+                                    rel="nofollow noopener">
+                                    <div class="icon-img">
+                                        <img src="images/face.png" alt srcset>
+                                    </div>
+                                </a></li>
+                            <li><a class="social-icon" href="https://www.instagram.com/routine_official/"
+                                    target="_blank" rel="nofollow noopener">
+                                    <div class="icon-img">
+                                        <img src="images/insta.png" alt srcset>
+                                    </div>
+                                </a></li>
+                            <li><a class="social-icon" href="https://zalo.me/3623603903787020327" target="_blank"
+                                    rel="nofollow noopener">
+                                    <div class="icon-img">
+                                        <img src="images/zalo.png" alt srcset>
+                                    </div>
+                                </a></li>
+                            <li><a class="social-icon" href="https://www.youtube.com/channel/UCx32mX7R75Km_oQiI_NGAQg"
+                                    target="_blank" rel="nofollow noopener">
+                                    <div class="icon-img">
+                                        <img src="images/ytb.png" alt srcset>
+                                    </div>
+                                </a></li>
+                            <li><a class="social-icon" href="https://www.tiktok.com/@routine_vietnam?lang=vi-VN"
+                                    target="_blank" rel="nofollow noopener">
+                                    <div class="icon-img">
+                                        <img src="images/tiktok.png" alt srcset>
+                                    </div>
+                                </a></li>
+                            <li><a class="social-icon" href="https://shopee.vn/routinevn" target="_blank"
+                                    rel="nofollow noopener">
+                                    <div class="icon-img">
+                                        <img src="images/shopee.png" alt srcset>
+                                    </div>
+                                </a></li>
+                            <li><a class="social-icon" href="https://www.lazada.vn/shop/routine-official"
+                                    target="_blank" rel="nofollow noopener">
+                                    <div class="icon-img">
+                                        <img src="images/routine-lazada-logo.png" alt srcset>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-bct">
+                        <img src="images/kiemchung.png" alt srcset>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<!-- Custom scripts -->
+<script type="text/javascript" src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+<script>
+
+    $(document).ready(function ($) {
+
+        // footer accordioan
+        if ($(window).width() < 520) {
+            $('.accordian .accordian_title').click(function () {
+                $(this).parent().find('.accordian_content').slideToggle();
+                $(this).parent().siblings().find('.accordian_content').slideUp();
+                $(this).parent().toggleClass('active_header');
+                $(this).parent().siblings().removeClass('active_header');
+            });
+        }
+
+    });
+</script>

@@ -1,0 +1,256 @@
+.banner {
+    background: url(https://res.cloudinary.com/dj5vdnbai/image/upload/v1691382012/BANNER_xa37ol.png);
+    height: 45vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.block-container {
+    max-width: 1700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.block-container .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(127px, 1fr));
+    gap: 5px;
+
+}
+
+.block-container .grid-container .box {
+    background-color: var(--box-color);
+    border-radius: 5px;
+    display: none;
+    padding: 10px 0;
+    transition: all 600ms ease-in-out;
+    position: relative;
+    border: 1px solid #fff;
+}
+
+.block-container .grid-container .box:hover {
+    /* transform: scale(1.2); */
+    transform: translateY(-10px);
+    box-shadow:0 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.block-container .grid-container .box .sport {
+    padding: 10px 0;
+}
+
+.block-container .grid-container .box .sport h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.block-container .grid-container .box .image {
+    overflow: hidden;
+    height: 140px;
+    border-radius: 5px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.box .image img,
+.item-banner img,
+.item-banner-2 img,
+.item-banner-3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.block-container .grid-container .box:nth-child(n) {
+    display: inline-block;
+}
+
+.block-container .grid-container .box .content h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.grid-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.item-banner {
+    grid-column: 3 / span 8;
+    grid-row: 2 / span 2;
+}
+
+.item-banner-2 {
+    grid-column: 3 / span 4;
+    grid-row: 4 / span 2;
+}
+
+.item-banner-3 {
+    grid-column: 7 / span 4;
+    grid-row: 4 / span 2;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.popup-overlay.appear {
+    animation: appear 0.5s ease-in-out;
+}
+
+.popup-box {
+    border-radius: 6px;
+    padding: 20px;
+    width: 400px;
+}
+
+.popup-box .block-box {
+    border-radius: 10px;
+    background-color: var(--box-color);
+    padding: 10px 0;
+}
+
+
+.close-button {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    cursor: pointer;
+    color: #000;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.popup-box .block-box .sport,
+.popup-box .block-box .content,
+.popup-box .block-box .congratulation {
+    padding: 10px;
+}
+
+.popup-box .block-box .sport h3,
+.popup-box .block-box .content h3 {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.popup-box .block-box .congratulation h4 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.popup-box .block-box .congratulation p {
+    color: #fff;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.show-more {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 13px 30px;
+    color: #0d6eff;
+    font-size: 16px;
+    background-color: #d6e6ff;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+    transition: all 300ms ease-in-out;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+}
+
+.show-more:hover {
+    background-color: crimson;
+    border-color: crimson;
+    color: #fff;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .block-container .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+    }
+
+    .item-banner {
+        grid-column: 2 / span 6;
+        grid-row: 2 / span 2;
+    }
+
+    .item-banner-2 {
+        grid-column: 2 / span 3;
+        grid-row: 4 / span 2;
+    }
+
+    .item-banner-3 {
+        grid-column: 5 / span 3;
+        grid-row: 4 / span 2;
+    }
+
+    .block-container .grid-container .box .image {
+        height: 80px;
+    }
+
+    .block-container .grid-container .box .sport {
+        padding: 3px 0;
+    }
+}
+
+@media only screen and (max-width:520px) {
+    .banner {
+        background-position: 60%;
+        height: 30vw;
+    }
+    .block-container .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+    }
+
+    .item-banner {
+        grid-column: 1 / span 4;
+        grid-row: 2 / span 2;
+    }
+
+    .item-banner-2 {
+        grid-column: 1 / span 2;
+        grid-row: 4 / span 1;
+    }
+
+    .item-banner-3 {
+        grid-column: 3 / span 2;
+        grid-row: 4 / span 1;
+    }
+
+    .popup-box .block-box .congratulation p {
+        font-size: 16px;
+    }
+
+    .block-container .grid-container .box .sport {
+        padding: 5px 0;
+    }
+
+    .block-container .grid-container .box .image {
+        height: 100px;
+    }
+}

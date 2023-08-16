@@ -1,0 +1,219 @@
+
+.banner {
+    background: url(https://res.cloudinary.com/dj5vdnbai/image/upload/v1691380560/ROU01040_al00bq.png);
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.list-combo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 5% 0;
+}
+
+.list-combo .list-combo-title h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.list-combo .list-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1%;
+    width: 1600px;
+    max-width: 100%;
+}
+.list-combo .list-product-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1%;
+    width: 1200px;
+    max-width: 100%;
+}
+
+.list-combo .list-product .radio-combo,
+.list-combo .list-product-2 .radio-card {
+    width: 24%;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-gap: 30px;
+    place-items: center;
+    place-content: center;
+}
+
+.grid-col-auto {
+    grid-auto-flow: column;
+    grid-template-rows: auto;
+}
+
+/* ******************* Main Styeles : Radio combo */
+label.radio-combo,
+label.radio-card {
+    cursor: pointer;
+}
+
+label.radio-combo .combo-content-wrapper,
+label.radio-card .card-content-wrapper {
+    background: #ecf4ff;
+    border-radius: 5px;
+    max-width: 100%;
+    min-height: 290px;
+    padding: 15px;
+    display: grid;
+    box-shadow: 0 2px 4px 0 rgba(219, 215, 215, 0.04);
+    transition: 200ms linear;
+}
+
+label.radio-combo input[type='radio'],
+label.radio-card input[type='radio'] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+label.radio-combo input[type='radio']:checked+.combo-content-wrapper,
+label.radio-card input[type='radio']:checked+.card-content-wrapper {
+    background: #0066ff;
+}
+
+label.radio-combo input[type='radio']:checked+.combo-content-wrapper h3,
+label.radio-combo input[type='radio']:checked+.combo-content-wrapper h4,
+label.radio-combo input[type='radio']:checked+.combo-content-wrapper span,
+label.radio-combo input[type='radio']:checked+.combo-content-wrapper h5,
+label.radio-card input[type='radio']:checked+.card-content-wrapper h4 {
+    color: #fff;
+}
+
+label.radio-combo .product-name h3 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.24px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+label.radio-combo .combo-content img,
+label.radio-card .card-content img {
+    margin-bottom: 10px;
+}
+label.radio-card .card-content img {
+    margin: 30px 0;
+}
+label.radio-combo .combo-content h4{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.24px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+label.radio-combo .combo-content span {
+    display: block;
+    height: 120px;
+    overflow-y: auto;
+}
+
+label.radio-combo .combo-content img,
+label.radio-card .card-content img {
+    width: 100%;
+}
+label.radio-card .card-sport h4{
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+.messenger-gift {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.messenger-gift h5 {
+    text-align: center;
+    font-weight: 700;
+    color: #838383;
+}
+
+.messenger-gift .box-text {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+.messenger-gift .box-text textarea {
+    border-radius: 10px;
+    background-color: #efefef;
+}
+
+label.radio-card .card-content h5 {
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+    color: #686d73;
+}
+
+.CTA-action {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3% 0;
+    justify-content: center;
+}
+
+.CTA-action .btn-pay {
+    transition: all .3s ease;
+    font-weight: 700;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 46px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 5px 35px;
+    line-height: 34px;
+    color: #fff;
+    background-color: #3281f5;
+    border-radius: 40px;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+    .banner .convey_message h1 {
+        font-size: 4vw;
+    }
+    .list-combo .list-product,
+    .list-combo .list-product-2,
+    .messenger-gift .box-text {
+        width: 100%;
+    }
+    .list-combo .list-product .radio-combo,
+    .list-combo .list-product-2 .radio-card {
+        width: 48%;
+    }
+    label.radio-combo .product-name h3 { 
+        font-size: 16px;
+    }
+}

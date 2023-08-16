@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* checkout */
+.banner {
+    background: url(https://res.cloudinary.com/dj5vdnbai/image/upload/v1691382012/BANNER_xa37ol.png);
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.thanks-buy-combo {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.thanks-buy-combo .img-bag {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.thanks-buy-combo .img-bag img {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.thanks-buy-combo .content-information  {
+    margin-bottom: 2rem;
+}
+.thanks-buy-combo .content-information h3,
+.thanks-buy-combo .content-information p {
+    color: #0066FF;
+}
+.thanks-buy-combo .content-information p span,
+.thanks-buy-combo .information-website h4 {
+    font-weight: 600;
+}
+
+.thanks-buy-combo .information-website {
+    margin: 2rem 0;
+}
+.thanks-buy-combo .information-website h4{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+.thanks-buy-combo .btn-action {
+    margin: 7% auto;
+}
+.thanks-buy-combo .btn-action a {
+    padding: 1em 5em;
+    width: 50%;
+    border: 1px solid #0066FF;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.thanks-buy-combo .btn-continue-buy {
+    margin-bottom: 5%;
+}
+.thanks-buy-combo .btn-follow-order a {
+    background-color: #fff;
+    color: #0066FF;
+    transition: 0.2s ease-in-out;
+}
+.thanks-buy-combo .btn-follow-order a:hover {
+    background-color: #0066FF;
+    color: #fff;
+}
+.thanks-buy-combo .btn-continue-buy a {
+    background-color: #0066FF;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+.thanks-buy-combo .btn-continue-buy a:hover {
+    background-color: #fff;
+    color: #0066FF;
+}
+@media screen and (max-width: 576px) {
+    .banner {
+        background-position: 60%;
+        height: 30vw;
+    }
+    .banner .content h1 {
+        font-size: 4vw;
+        width: 75%;
+    }
+    .banner .content p,
+    .thanks-buy-combo {
+        width: 100%;
+    }
+    .thanks-buy-combo .btn-action {
+        margin: 15% auto;
+    }
+}
