@@ -811,6 +811,7 @@ section {
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    padding-bottom: 10px;
 }
 
 .story .story-2 .story-content p,
