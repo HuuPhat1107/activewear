@@ -119,3 +119,7 @@ function onYouTubeIframeAPIReady() {
     });
   });
 }
+function scrollToMyElement() {
+  const myElement = document.getElementById("my-element");
+  myElement.scrollIntoView();
+}

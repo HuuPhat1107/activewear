@@ -1000,11 +1000,13 @@ section {
     .story .story-1 {
         gap: 10px;
     }
+
     .story .story-1,
     .story .story-2,
     .story .story-3 {
         margin: 4% auto;
     }
+
     .story .story-1 .story-img,
     .story .story-2 .story-img,
     .story .story-3 .story-img,
@@ -1520,4 +1522,67 @@ section {
         width: 300px;
         margin: 0px auto;
     }
+}
+
+.cta-buy {  
+    display: flex;
+    margin: 0 auto;
+    text-decoration: none;
+    align-self: flex-end;
+    margin-top: 20px;
+    position: sticky;
+    bottom: 1%;
+    display: inline-block;
+    color: white;
+    padding: 35px 10px;
+    z-index: 10000;
+}
+
+.button {
+    display: flex;
+    text-decoration: none;
+    align-self: flex-end;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 35px 70px;
+    background-image: url('../images/nhanqua.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #00000000;
+    border: 0;
+}
+
+div.scrollTop {
+    display: block;
+
+}
+
+.backTop {
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    position: fixed;
+    bottom: 1%;
+    right: 2%;
+    display: none;
+    z-index: 1000;
+
+}
+.backTop img {
+    width: 100%;
+    height: 100%;
+}
+
+.backTop:hover {
+    color: darkgray;
+}
+
+.fix {
+    left: 0;
+    max-width: 100%;
+    overflow: visible;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
