@@ -814,7 +814,7 @@ section {
 .story .story-1 .story-img,
 .story .story-2 .story-img,
 .story .story-3 .story-img {
-    width: 60%;
+    width: 45%;
     height: 100%;
 }
 
@@ -862,7 +862,7 @@ section {
 .story .story-3 .story-content {
     position: relative;
     height: 100%;
-    width: 35%;
+    width: 50%;
     margin: 0 auto;
     position: relative;
     font-family: sans-serif;
